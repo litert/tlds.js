@@ -24,7 +24,7 @@ class TLDManager implements C.ITLDManager {
 
     public isTLD(tld: string): boolean {
 
-        if (tld[0] === '.') {
+        if (tld.startsWith('.')) {
 
             tld = `test${tld}`;
         }
