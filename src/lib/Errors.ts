@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Angus.Fenying <fenying@litert.org>
+ * Copyright 2021 Angus.Fenying <fenying@litert.org>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,14 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import * as $Exceptions from '@litert/exception';
 
-import * as L from '@litert/core';
+export const exceptionRegistry = $Exceptions.createExceptionRegistry({
+    module: 'tlds.litert.org',
+    types: {
+        'public': {
+            'index': $Exceptions.createIncreaseCodeIndex(0)
+        }
+    }
+});
 
-export const ErrorHub = L.createErrorHub('@litert/tlds');
-
-export const E_INVALID_TLD = ErrorHub.define(
-    null,
-    'E_INVALID_TLD',
-    'The TLD is invalid.',
-    {}
-);
+export const E_INVALID_TLD = exceptionRegistry.register({
+    type: 'public',
+    name: 'invalid_tld',
+    message: 'The TLD is invalid.',
+    metadata: {}
+});

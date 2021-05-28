@@ -1,5 +1,6 @@
 # LiteRT/TLD
 
+[![Strict TypeScript Checked](https://badgen.net/badge/TS/Strict "Strict TypeScript Checked")](https://www.typescriptlang.org)
 [![npm version](https://img.shields.io/npm/v/@litert/tlds.svg?colorB=brightgreen)](https://www.npmjs.com/package/@litert/tlds "Stable Version")
 [![License](https://img.shields.io/npm/l/@litert/tlds.svg?maxAge=2592000?style=plastic)](https://github.com/litert/tlds/blob/master/LICENSE)
 [![node](https://img.shields.io/node/v/@litert/tlds.svg?colorB=brightgreen)](https://nodejs.org/dist/latest-v8.x/)

@@ -8,3 +8,8 @@
 /tsconfig.json
 /test/
 /*.sh
+/.husky/
+/.eslintrc
+/.eslintignore
+/commitlint.config.js
+/examples/

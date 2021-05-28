@@ -1,5 +1,5 @@
 /**
- * Copyright 2020 Angus.Fenying <fenying@litert.org>
+ * Copyright 2021 Angus.Fenying <fenying@litert.org>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 export * from './Common';
 export * from './TLDManager';
 export * from './Errors';
